@@ -1,0 +1,50 @@
+.main_eight-animation{
+    margin-top: 110px;
+    background-color: #ffffff;
+    margin-right: 35px;
+}
+.main__button{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 40px 31px;
+    color: #a166ab;
+    background-color: inherit;
+    animation: textRGB 3s linear infinite;
+}
+.main__button::after{
+    content: '';
+    z-index: -1;
+    display: block;
+    background-image: linear-gradient(45deg,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-size: 200%;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-radius: 5px;
+    animation: animatebg 3s linear infinite;
+}
+@keyframes animatebg {
+    0%{
+        background-position:0;
+    }
+    50%{
+        background-position:100%;
+    }
+    100%{
+        background-position:0;
+    }
+}
+@keyframes textRGB {
+    0%,100%{
+        color:#a166ab
+    }
+    50%{
+        color: #07b39b;
+    }
+}

@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(36,0,32,1) 12%, rgba(64,64,195,1) 52%, rgba(205,0,255,1) 100%);
+    margin-top: 70px;
+    border-top: 10px solid #424bce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}

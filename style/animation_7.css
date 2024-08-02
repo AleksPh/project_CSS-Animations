@@ -1,0 +1,74 @@
+.main__seventh-animation{
+    margin-top: 65px
+}
+.scan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fingerprint{
+    position: relative;
+    height: 220px;
+    width: 200px;
+    background: url(../images/fingerprint.png) no-repeat;
+    background-size: 200px;
+}
+.fingerprint::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/fingerprint2.png) no-repeat;
+    background-size: 200px;
+    animation: scanning 4s ease-in-out infinite;
+}
+@keyframes scanning {
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+    }
+}
+.fingerprint::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: #70e2ff;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #25cbf5) drop-shadow(0 0 60px #25cbf5);
+    animation: movingg 4s ease-in-out infinite;
+}
+@keyframes movingg {
+    0%,100%{
+        top: 0%;
+    }
+    50%{
+        top: 95%;
+    }
+}
+.scan span{
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #32d6ff;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-align: center;
+    animation: textt 4s ease-in-out infinite;
+    /* text-shadow:  */
+}
+@keyframes textt {
+    0%,100%{
+        color: #151231;
+    }
+    50%{
+        color: #11dbff;
+    }
+}

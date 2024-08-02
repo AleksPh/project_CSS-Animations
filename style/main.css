@@ -1,0 +1,79 @@
+.main{
+    width: 100%;
+    position: relative;
+}
+.main__container{
+    position: inherit;
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+}
+.main__title{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(195, 0, 255);
+    position: relative;
+    max-width: 500px;
+    margin-top: 70px;
+}
+.main__title::before{
+    content: "";
+    width: 80%;
+    position: absolute;
+    height: 4px;
+    left: 10%;
+    background-color: rgb(195, 0, 255);
+    margin-top: 95px;
+}
+.tablet{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    border-radius: 5%;
+}
+.main__block{
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    height: 1200px;
+    border-radius: 5%;
+    margin-left: 15px;
+}
+.main__column{
+    display: flex;
+    border: 4px solid rgb(195, 0, 255);
+    height: 33.3333%;
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 15px;
+    padding: 0 30px 20px 55px;
+    -webkit-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+    -moz-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+    box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+    -webkit-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+    -moz-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+    box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+}
+.main__animation{
+    width: 60%;
+    margin-right: 20px;
+    text-align: center;
+}
+.main__text{
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(16, 91, 230);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.main__line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(16, 91, 230);
+}

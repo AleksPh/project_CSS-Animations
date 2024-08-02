@@ -1,0 +1,103 @@
+.main__third-animation{
+    margin-top: 80px;
+    margin-left: -20px;
+}
+.main__third-animation>.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bowl{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 71, 71);
+    border-radius: 50%;
+    border: 4px solid transparent;
+    transform-origin: bottom center;
+    animation: bowler 4s linear infinite;
+}
+@keyframes bowler {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+}
+.bowl::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 45%;
+    border: 11px solid rgb(141, 141, 141);
+    border-radius: 50%;
+    box-shadow: 0 7px #2c2c2c ;
+}
+.bowl::after{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 60px;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    background-color: rgba(224, 224, 224, 0.05);
+}
+.liquid{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #07aff1;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    filter: drop-shadow(0 0 90px #07aff1);
+    animation: liquider 4s linear infinite;
+    transform-origin: top center;
+}
+@keyframes liquider {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.liquid::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    right:  0%;
+    width: 100%;
+    height: 16px;
+    background-color: #3786ee;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 90px #07aff1);
+}
