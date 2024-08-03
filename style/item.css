@@ -1,26 +1,23 @@
-.lastItem{
-    position: relative;
-    display: block;
+.lastItem{  
     flex-direction: column;
-    padding: 15px;
 }
 .item__picture{
     position: relative;
     width: 100%;
-    margin-top: 30px;
+   
 }   
 .item__picture>img{
     height: 200px;
     width: 200px;
     position: relative;
-    left: 50%; 
+  
     animation: lump 2s ease-in-out alternate infinite;
     transform-origin: center bottom;
 }
 .item__text{
     position: relative;
-    left: 50%;
-    margin-top: 40px;
+   
+    
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;

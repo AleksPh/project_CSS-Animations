@@ -3,7 +3,6 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    margin-top:150px ;
 }
 .pre-block{
     height: 36px;
@@ -13,20 +12,17 @@
     margin-right: 10px;
     animation: up-down 0.8s linear infinite alternate;
     animation-delay: calc(0.16s*var(--i));
-    /* transform: rotate(calc(18deg*var(--i))); */
 }
 
 @keyframes up-down {
     0%{
         transform: scaleY(2.7);
-        /* filter: hue-rotate(0deg); */
         border-radius: 10px;
         background-color: #cb2bf3;
     }
     100%{
         transform: scaleY(1);
         border-radius: 18px;
-        /* filter: hue-rotate(360deg); */
         background-color: #1dd7f8;
     }
 }

@@ -1,7 +1,3 @@
-.main__third-animation{
-    margin-top: 80px;
-    margin-left: -20px;
-}
 .main__third-animation>.container{
     display: flex;
     justify-content: center;

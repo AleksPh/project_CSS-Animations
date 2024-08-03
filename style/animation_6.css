@@ -2,14 +2,10 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-left: 25px;
 }
 .circle{
-    position: absolute;
-    /* top: 20%;
-    left: 50%; */
     width: 200px;
-    height: 200px;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 13px solid #8f8f8f;
     border-top: 13px solid #7c57e2;
@@ -17,9 +13,9 @@
 }
 @keyframes pre-circle {
     0%{
-        transform: translate(-20%, 50%) rotate(0deg);
+        transform:  rotate(0deg);
     }
     100%{
-        transform: translate(-20%, 50%) rotate(360deg);
+        transform:  rotate(360deg);
     }
 }

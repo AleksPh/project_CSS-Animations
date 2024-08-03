@@ -6,7 +6,7 @@
     position: inherit;
     width: 90%;
     height: auto;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 .main__title{
     margin: 0 auto;
@@ -35,33 +35,12 @@
     height: auto;
     margin-top: 90px;
     border-radius: 5%;
-}
-.main__block{
-    display: flex;
-    flex-direction: column;
-    width: 33.333%;
-    height: 1200px;
-    border-radius: 5%;
-    margin-left: 15px;
-}
-.main__column{
-    display: flex;
-    border: 4px solid rgb(195, 0, 255);
-    height: 33.3333%;
-    width: 100%;
-    border-radius: 5%;
-    margin-bottom: 15px;
-    padding: 0 30px 20px 55px;
-    -webkit-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
-    -moz-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
-    box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
-    -webkit-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
-    -moz-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
-    box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+    flex-wrap: wrap;
+    max-width: 1900px;
+    gap: 15px;
 }
 .main__animation{
-    width: 60%;
-    margin-right: 20px;
+    width: 55%;
     text-align: center;
 }
 .main__text{
@@ -70,10 +49,33 @@
     color: rgb(16, 91, 230);
     font-weight: 700;
     font-size: 20px;
-    margin-top: 80px;
 }
 .main__line{
     width: 100%;
     height: 3px;
     background-color: rgb(16, 91, 230);
+}
+
+
+.item{
+  position: relative;
+  max-width: 700px;
+  border: 4px solid rgb(195, 0, 255);
+  padding: 100px 50px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+  -moz-box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+  box-shadow: 4px 6px 34px -1px rgba(230,113,230,1);
+  -webkit-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+  -moz-box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+  box-shadow: inset -20px -6px 58px 32px rgba(230,113,230,0.45);
+}
+
+.translated{
+  transform: translateX(40px);
 }
